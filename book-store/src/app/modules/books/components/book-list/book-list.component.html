@@ -1,0 +1,22 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-4" *ngFor="let book of books">
+        <div class="card book-card">
+            <div class="card-body">
+              <div class="bs-img">
+                <img [src]="book.image | bookImageUrl" alt="Card image cap"  class="card-img-top"/>
+              </div>
+              <p>{{book.name}}.</p>
+              <p>{{book.author}}</p>
+              <div class="bs-rating">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <span class="book-price">${{book.price}}</span>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>

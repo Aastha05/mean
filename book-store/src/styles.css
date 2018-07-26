@@ -1,0 +1,6 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('/assets/web-fonts-with-css/css/fontawesome-all.min.css');
+
+.bg-primary{
+    background-color: #4ABDAC !important;
+}

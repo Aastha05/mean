@@ -1,0 +1,4 @@
+node_modules
+book-store/node_modules/
+gps/node_modules/
+gps-api/node_modules/

@@ -1,0 +1,22 @@
+
+    <h2>Devices</h2>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">IMEI No.</th>
+          <th scope="col">Protocol</th>
+          <th scope="col">SIM No.</th>
+          <th scope="col">Vendor Name</th>
+          <th scope="col">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor = "let device of devices">
+          <th scope="row">1</th>
+          <td>{{device.name}}</td>
+
+        </tr>
+      </tbody>
+    </table>

@@ -1,0 +1,26 @@
+
+    <h2>Vehicles</h2>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Rgst. No.</th>
+          <th scope="col">Type</th>
+          <th scope="col">Model</th>
+          <!-- <th scope="col">Speed</th> -->
+          <th scope="col">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let vehicle of vehicles; let i = index">
+          <th scope="row">{{i + 1}}</th>
+          <td>{{vehicle.name}}</td>
+          <td>{{vehicle.registration_number}}</td>
+          <td><img [src]="vehicle.type | vehicleImage"></td>
+          <td>{{vehicle.model}}</td>
+          <!-- <td [class] = " vehicle.speed | vehicleColor">{{vehicle.speed}}</td> -->
+          <td [class] = " vehicle.speed | vehicleColor">{{vehicle.speed | vehicleStatus}}</td>
+        </tr>
+      </tbody>
+    </table>
